@@ -1,21 +1,20 @@
 function fizzbuzz(number) {
-    if(number !== 0) {
-        if(number % 3 === 0 && number % 5 === 0) {
-            return 'FizzBuzz'
-        }
+        let finalResult = ''
 
         if(number % 3 === 0) {
-            return 'Fizz'
+            finalResult = 'Fizz'
         }
     
         if(number % 5 === 0) {
-            return 'Buzz'
+            finalResult += 'Buzz'
         }
-    }
 
-    
+        if(!finalResult) {
+            finalResult = number
+        }
+        
+        return number === 0 ? number : finalResult
 
-    return number
 }
 
 module.exports = fizzbuzz
