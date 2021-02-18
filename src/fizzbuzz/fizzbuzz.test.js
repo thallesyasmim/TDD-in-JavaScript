@@ -3,8 +3,8 @@ const fizzbuzz = require('./fizzbuzz')
 
 describe('FizzBuzz Puzzle', () => {
     test('If it is not a multiple of 3 or 5, return it yourself', () => {
-        const result = fizzbuzz(0)
-        expect(result).toEqual(0)
+        const result = fizzbuzz(7)
+        expect(result).toEqual(7)
     })
 
     test('If it is a multiple of 3, return "Fizz"', () => {
